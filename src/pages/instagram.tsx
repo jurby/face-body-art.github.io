@@ -136,13 +136,13 @@ const Instagram: React.FunctionComponent<Props> = ({
 
   return (
     <Layout color="#3F4F67">
-      <SEO title="Instagram | Jodie" />
+      <SEO title="Instagram | FaceBodyArtCZ" />
       <Grid style={pageAnimation}>
         {trail.map((style, index) => {
           // Grab everything before the first hashtag (because I write my captions like that)
           const post = instagram[index]
           const title = post.caption ? post.caption.split('#')[0] : ''
-          const date = new Date(post.timestamp * 1000).toLocaleDateString('de-DE')
+          const date = new Date(post.timestamp * 1000).toLocaleDateString('cs-CZ')
 
           return (
             <Item style={style} href={`https://www.instagram.com/p/${post.id}/`} key={post.id}>

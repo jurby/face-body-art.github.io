@@ -23,6 +23,14 @@ module.exports = {
     facebook: config.ogSiteName,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-tinacms',
+      options: {
+        plugins: [
+          // We'll add some Tinacms plugins in the next step.
+        ],
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-typescript',
